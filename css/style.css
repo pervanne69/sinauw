@@ -254,6 +254,11 @@ header.header .header__body .header__top .header__lang span.header__lang-link {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__lang span.header__lang-link {
+    font-size: 10px;
+  }
+}
 header.header .header__body .header__top .header__lang span.header__lang-link::before, header.header .header__body .header__top .header__lang span.header__lang-link::after {
   content: "";
   position: absolute;
@@ -264,15 +269,30 @@ header.header .header__body .header__top .header__lang span.header__lang-link::b
   background: url("../../images/globe.png");
   right: 10px;
 }
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__lang span.header__lang-link::before {
+    right: 15px;
+  }
+}
 header.header .header__body .header__top .header__lang span.header__lang-link::after {
   width: 6px;
   height: 6px;
   background: url("../../images/Polygon 1.png");
   right: 0;
 }
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__lang span.header__lang-link::after {
+    right: 5px;
+  }
+}
 header.header .header__body .header__top .header__lang a.header__lang-link {
   font-size: 12px;
   line-height: 150%;
+}
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__lang a.header__lang-link {
+    font-size: 10px;
+  }
 }
 header.header .header__body .header__top .header__button-login {
   background: #F5443B;
@@ -281,6 +301,11 @@ header.header .header__body .header__top .header__button-login {
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
+}
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__button-login {
+    padding: 6px 16px;
+  }
 }
 header.header .header__body .header__top .header__button-login:hover {
   -webkit-box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.6);
@@ -296,8 +321,13 @@ header.header .header__body .header__top .header__button-login a {
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
   color: #FFFFFF;
+}
+@media (max-width: 375px) {
+  header.header .header__body .header__top .header__button-login a {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }
 header.header .header__body .header__top .header__burger.burger .burger__logo {
   display: -webkit-box;
@@ -632,6 +662,11 @@ header.header .header__body .header__main .header__content .header__suggestions 
   margin: 0 0 42px 0;
   text-align: left;
 }
+@media (max-width: 1079px) {
+  header.header .header__body .header__main .header__content .header__suggestions .header__suggestions-title {
+    text-align: center;
+  }
+}
 header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items {
   display: -ms-grid;
   display: grid;
@@ -639,10 +674,16 @@ header.header .header__body .header__main .header__content .header__suggestions 
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-gap: 30px;
 }
-@media (max-width: 570px) {
+@media (max-width: 1079px) {
+  header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items {
+    margin: 0 0 0 40px;
+  }
+}
+@media (max-width: 633px) {
   header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items {
     -ms-grid-columns: 1fr;
     grid-template-columns: repeat(1, 1fr);
+    margin: 0;
   }
 }
 header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items .header__suggestion {
@@ -663,6 +704,13 @@ header.header .header__body .header__main .header__content .header__suggestions 
           align-items: center;
   padding: 10px 0;
   cursor: pointer;
+}
+@media (max-width: 375px) {
+  header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items .header__suggestion {
+    width: 250px;
+    padding: 15px 20px;
+    margin: 0 auto;
+  }
 }
 header.header .header__body .header__main .header__content .header__suggestions .header__suggestion-items .header__suggestion a {
   font-weight: 400;
