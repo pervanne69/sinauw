@@ -189,9 +189,9 @@ header.header .header__body .header__top {
 }
 @media (max-width: 467px) {
   header.header .header__body .header__top {
-    -webkit-column-gap: 10px;
-       -moz-column-gap: 10px;
-            column-gap: 10px;
+    -webkit-column-gap: 17px;
+       -moz-column-gap: 17px;
+            column-gap: 17px;
   }
 }
 header.header .header__body .header__top .header__items {
@@ -691,7 +691,7 @@ header.header .header__body .header__main .header__content .header__suggestions 
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px;
+  padding: 15px 15px 60px 15px;
 }
 .header__burger-active .burger__body .burger__items a {
   font-weight: 500;
