@@ -4,17 +4,19 @@ const body = document.body
 
 const animationItems = document.querySelectorAll('._animation-items')
 
+const animationItemsSecond = document.querySelectorAll('._animation-items-second')
+
+
 if (animationItems.length > 0) {
-    console.log("yes")
     window.addEventListener('wheel', animationOnScroll)
     window.addEventListener('scroll', animationOnScroll)
     function animationOnScroll() {
-        console.log("Событие сработало")
         for (let index = 0; index < animationItems.length; index++) {
             const animationItem = animationItems[index]
             const animationItemHeight = animationItem.offsetHeight
             const animationItemOffset = offset(animationItem).top
-            const animationStart = 10000
+            const animationStart = 8
+            console.log(animationItem)
 
             let animationItemPoint = window.innerHeight - animationItemHeight / animationStart
 
@@ -23,8 +25,29 @@ if (animationItems.length > 0) {
             }
             if ((scrollY > (animationItemOffset - animationItemPoint)) && (scrollY < (animationItemOffset + animationItemHeight))) {
                 animationItem.classList.add('_active')
+                animationItem.classList.add('stop-counting')
             } else {
                 animationItem.classList.remove('_active')
+            }
+        }
+        if (animationItemsSecond.length > 0) {
+            for (let index = 0; index < animationItemsSecond.length; index++) {
+                const animationItem = animationItemsSecond[index]
+                const animationItemHeight = animationItem.offsetHeight
+                const animationItemOffset = offset(animationItem).top
+                const animationStart = 2
+
+                let animationItemPoint = window.innerHeight - animationItemHeight / animationStart
+
+                if (animationItemHeight > window.innerHeight) {
+                    animationItemPoint = window.innerHeight - window.innerHeight / animationStart
+                }
+                if ((scrollY > (animationItemOffset - animationItemPoint)) && (scrollY < (animationItemOffset + animationItemHeight))) {
+                    animationItem.classList.add('_active-second')
+                    animationItem.classList.add('stop-counting')
+                } else {
+                    animationItem.classList.remove('_active-second')
+                }
             }
         }
     }
