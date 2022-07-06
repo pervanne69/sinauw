@@ -568,7 +568,7 @@ header.header .header__body .header__main .header__content .header__content-body
 @media (max-width: 375px) {
   header.header .header__body .header__main .header__content .header__content-body .header__input {
     max-width: 225.2px;
-    margin: 0 auto;
+    margin: 0 auto 0 -40px;
   }
 }
 @media (max-width: 1079px) {
