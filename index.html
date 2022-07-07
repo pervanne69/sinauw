@@ -5,13 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Sinauw</title>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="icon" href="images/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="home">
             <div class="container">
                 <div class="header__body">
                     <div class="header__top">
@@ -19,8 +21,8 @@
                             <img src="images/logo.svg" alt="Logo" />
                         </a>
                         <div class="header__items">
-                            <a href="">Home</a>
-                            <a href="">Courses</a>
+                            <a href="#home">Home</a>
+                            <a href="#courses">Courses</a>
                             <a href="">Webinar</a>
                             <a href="">Pricing</a>
                         </div>
@@ -39,8 +41,8 @@
                             </div>
                             <div class="burger__body">
                                 <div class="burger__items">
-                                    <a >Home</a>
-                                    <a >Courses</a>
+                                    <a href="#home">Home</a>
+                                    <a href="#courses">Courses</a>
                                     <a >Webinar</a>
                                     <a >Pricing</a>
                                 </div>
@@ -189,11 +191,101 @@
                     </div>
                 </div>
             </section>
+            <section class="courses" id="courses">
+                <div class="container">
+                    <div class="courses__body _animation-items-second _passive-second">
+                        <div class="courses__title title">What Do You Want to Learn?</div>
+                        <div class="courses__text text">Choose the right class as you need. Then enjoy studying.</div>
+                        <div class="courses__items">
+                            <div class="courses__item">
+                                <div class="courses__image">
+                                    <img src="images/Rectangle-courses1.png" alt="Digital marketing videos" />
+                                </div>
+                                <div class="courses__item-subtitle">Technology</div>
+                                <div class="courses-item-title">Digital Marketing Strategy</div>
+                                <div class="courses__item-text courses__item-text-eng">
+                                    This course aims to give you deeper understanding of core processes...
+                                </div>
+                                <div class="courses__person">
+                                    <div class="courses__person-portrait">
+                                        <img src="images/Ellipse-human1.png" alt="person" />
+                                    </div>
+                                    <div class="courses__person-information">
+                                        <div class="courses__person-name">Joey Piere</div>
+                                        <div class="courses__person-post">Mentor</div>
+                                    </div>
+                                </div>
+                                <div class="courses__button button"><a>Access Class</a></div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__image">
+                                    <img src="images/Rectangle-courses2.png" alt="Figma Fundamental videos" />
+                                </div>
+                                <div class="courses__item-subtitle">Design</div>
+                                <div class="courses-item-title">Figma Fundamental</div>
+                                <div class="courses__item-text courses__item-text-eng">
+                                    These lessons and exercises will help you start designing with Figma ...
+                                </div>
+                                <div class="courses__person">
+                                    <div class="courses__person-portrait">
+                                        <img src="images/Ellipse-human2.png" alt="person" />
+                                    </div>
+                                    <div class="courses__person-information">
+                                        <div class="courses__person-name">Araya Sheila</div>
+                                        <div class="courses__person-post">Mentor</div>
+                                    </div>
+                                </div>
+                                <div class="courses__button button"><a>Access Class</a></div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__image">
+                                    <img src="images/Rectangle-courses3.png" alt="HTML Fundamental videos" />
+                                </div>
+                                <div class="courses__item-subtitle">Coding</div>
+                                <div class="courses-item-title">HTML Fundamental</div>
+                                <div class="courses__item-text courses__item-text-eng">Well organized and easy to make you understand tutorials with lots of ...</div>
+                                <div class="courses__person">
+                                    <div class="courses__person-portrait">
+                                        <img src="images/Ellipse-human3.png" alt="person" />
+                                    </div>
+                                    <div class="courses__person-information">
+                                        <div class="courses__person-name">Ellisa Ruth</div>
+                                        <div class="courses__person-post">Mentor</div>
+                                    </div>
+                                </div>
+                                <div class="courses__button button"><a>Access Class</a></div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__image">
+                                    <img src="images/Rectangle-courses4.png" alt="Android App Development videos" />
+                                </div>
+                                <div class="courses__item-subtitle">Coding</div>
+                                <div class="courses-item-title">Android App Development</div>
+                                <div class="courses__item-text courses__item-text-eng">
+                                    Take your Android coding skills to the next level, advanced Android app ...
+                                </div>
+                                <div class="courses__person">
+                                    <div class="courses__person-portrait">
+                                        <img src="images/Ellipse-human4.png" alt="person" />
+                                    </div>
+                                    <div class="courses__person-information">
+                                        <div class="courses__person-name">Wendy Troye</div>
+                                        <div class="courses__person-post">Mentor</div>
+                                    </div>
+                                </div>
+                                <div class="courses__button button"><a>Access Class</a></div>
+                            </div>
+                        </div>
+                        <div class="courses__main-button">
+                            <a href="#home">Show All Classes</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer class="footer"></footer>
     </div>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

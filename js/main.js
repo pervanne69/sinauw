@@ -7,6 +7,21 @@ const animationItems = document.querySelectorAll('._animation-items')
 const animationItemsSecond = document.querySelectorAll('._animation-items-second')
 
 
+// $(document).ready(function() {
+//     const coursesItems = $('.courses__items')
+//     $('.courses__item').each(function() {
+//         $(this).hover(function() {
+//             coursesItems.css({
+//                 'align-items': 'baseline'
+//             })
+//         }, function() {
+//             coursesItems.css({
+//                 'align-items': 'normal'
+//             })
+//         })
+//     })
+// })
+
 if (animationItems.length > 0) {
     window.addEventListener('wheel', animationOnScroll)
     window.addEventListener('scroll', animationOnScroll)
@@ -16,7 +31,6 @@ if (animationItems.length > 0) {
             const animationItemHeight = animationItem.offsetHeight
             const animationItemOffset = offset(animationItem).top
             const animationStart = 8
-            console.log(animationItem)
 
             let animationItemPoint = window.innerHeight - animationItemHeight / animationStart
 
