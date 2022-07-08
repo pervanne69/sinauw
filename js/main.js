@@ -6,6 +6,30 @@ const animationItems = document.querySelectorAll('._animation-items')
 
 const animationItemsSecond = document.querySelectorAll('._animation-items-second')
 
+const swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    initialSlide: 1,
+    speed: 500,
+    roundLengths: true,
+    // freeModeMomentumVelocityRatio: 10,
+    coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+
+    },
+    pagination: {
+        el: ".swiper-pagination",
+
+    },
+});
+
+
 
 $(document).ready(function() {
 
@@ -31,7 +55,7 @@ if (animationItems.length > 0) {
             const animationItem = animationItems[index]
             const animationItemHeight = animationItem.offsetHeight
             const animationItemOffset = offset(animationItem).top
-            const animationStart = 8
+            const animationStart = 1.5
 
             let animationItemPoint = window.innerHeight - animationItemHeight / animationStart
 
@@ -122,5 +146,6 @@ burgerCloseBtn.addEventListener('click', () => {
         body.classList.remove('overflow-hidden')
     }
 })
+
 
 setTimeout(animationOnScroll, 500)

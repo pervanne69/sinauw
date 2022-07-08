@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header" id="home">
             <div class="container">
                 <div class="header__body">
                     <div class="header__top">
@@ -23,9 +23,9 @@
                             <img src="images/logo.svg" alt="Лого" />
                         </a>
                         <div class="header__items">
-                            <a href="">Главная</a>
-                            <a href="">Курсы</a>
-                            <a href="">Вебинар</a>
+                            <a href="#home">Главная</a>
+                            <a href="#courses">Курсы</a>
+                            <a href="#webinar">Вебинар</a>
                             <a href="">Цены</a>
                         </div>
                         <div class="header__lang header__lang-passive">
@@ -43,9 +43,9 @@
                             </div>
                             <div class="burger__body">
                                 <div class="burger__items">
-                                    <a>Главная</a>
-                                    <a>Курсы</a>
-                                    <a>Вебинар</a>
+                                    <a href="#home">Главная</a>
+                                    <a href="#courses">Курсы</a>
+                                    <a href="#webinar">Вебинар</a>
                                     <a>Цены</a>
                                 </div>
                                 <div class="burger__label">
@@ -280,6 +280,54 @@
                         </div>
                         <div class="courses__main-button">
                             <a href="#home">Показать все занятия</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="webinar" id="webinar">
+                <div class="container">
+                    <div class="webinar__body _animation-items-second _passive-second">
+                        <div class="webinar__title title">Онлайн-вебинар в прямом эфире</div>
+                        <div class="webinar__text text">
+                            Вы можете смотреть вебинар в прямом эфире в наших приложениях. Будьте в курсе наших вебинаров, это бесплатно!
+                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="webinar__item swiper-slide">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-ru">
+                                            Основы дизайна пользовательского интерфейса
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="webinar__item swiper-slide swiper-slide-active">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-ru">
+                                            Как создать портфолио дизайнеру
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="webinar__item swiper-slide webinar__item-three">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-ru">
+                                            Основы HTML CSS
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="webinar__label">
+                            <a href="#">Посмотреть больше видео вебинаров</a>
                         </div>
                     </div>
                 </div>

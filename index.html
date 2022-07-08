@@ -6,9 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinauw</title>
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="icon" href="images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -286,27 +285,48 @@
             </section>
             <section class="webinar" id="webinar">
                 <div class="container">
-                    <div class="webinar__body">
-                        <div class="webinar__title title"></div>
-                        <div class="webinar__text text"></div>
-                        <div class="swiper">
-                            <!-- Additional required wrapper -->
+                    <div class="webinar__body _animation-items-second _passive-second">
+                        <div class="webinar__title title">Live Online Webinar</div>
+                        <div class="webinar__text text">
+                            You can stream Webinar live on our apps. Stay update on our Webinar, it’s Free!
+                        </div>
+                        <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <!-- Slides -->
-                                <div class="swiper-slide">Slide 1</div>
-                                <div class="swiper-slide">Slide 2</div>
-                                <div class="swiper-slide">Slide 3</div>
-                                ...
+                                <div class="webinar__item swiper-slide">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-eng">
+                                            User Interface Design Fundamental
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="webinar__item swiper-slide swiper-slide-active">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-eng">
+                                            How To Build Portofolio as A Designer
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="webinar__item swiper-slide webinar__item-three">
+                                    <a href="" class="webinar__link">
+                                        <h5 class="webinar__link-text webinar__link-text-eng">
+                                            HTML CSS Fundamental
+                                        </h5>
+                                        <span class="webinar-play-btn">
+                                            <img src="images/webinar-play-btn.svg" alt="">
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
-                            <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
-
-                            <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-
-                            <!-- If we need scrollbar -->
-                            <div class="swiper-scrollbar"></div>
+                        </div>
+                        <div class="webinar__label">
+                            <a href="#">See more webinar videos</a>
                         </div>
                     </div>
                 </div>
@@ -314,6 +334,7 @@
         </main>
         <footer class="footer"></footer>
     </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
