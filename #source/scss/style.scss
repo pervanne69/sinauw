@@ -58,6 +58,7 @@ header.header {
       padding: 32px 0 64px 100px;
       align-items: center;
       justify-content: space-between;
+      height: 46px;
       @media (max-width: 880px) {
         justify-content: center;
         column-gap: 100px;
@@ -745,7 +746,7 @@ section.courses {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-gap: 30px;
-      min-height: 485px;
+      align-items: baseline;
       @media only screen and (max-width: 1200px) {
         grid-gap: 10px;
       }
@@ -848,10 +849,11 @@ section.courses {
           width: 100%;
           flex-grow: 0;
           flex-shrink: 1;
-          height: 80px;
+          height: 40px;
           @media only screen and (max-width: 920px) {
             flex-grow: 0;
             flex-shrink: 0;
+            height: 20px;
           }
 
         }
@@ -863,6 +865,16 @@ section.courses {
           max-width: 250px;
           flex-grow: 1;
           flex-shrink: 0;
+          height: 90px;
+          display: flex;
+          flex-direction: column;
+          row-gap: 24px;
+          justify-content: space-between;
+          &::after {
+            content: "";
+            display: block;
+            border-top: 1px solid #292B56;
+          }
           @media only screen and (max-width: 920px) {
             max-width: none;
             width: 100%;
@@ -870,7 +882,6 @@ section.courses {
             flex-grow: 1;
             flex-shrink: 0;
           }
-
         }
         .courses__person {
           display: flex;
@@ -945,10 +956,10 @@ section.courses {
       border-radius: 6px;
       padding: 10px 20px;
       text-align: center;
-      transition: all 0.3s linear 0s;
+      transition: background-color,color,box-shadow 0.3s linear 0s;
       cursor: pointer;
       &:hover {
-        background: #F5443B;
+        background-color: #F5443B;
         a {
           color: #FFFFFF;
         }

@@ -7,20 +7,21 @@ const animationItems = document.querySelectorAll('._animation-items')
 const animationItemsSecond = document.querySelectorAll('._animation-items-second')
 
 
-// $(document).ready(function() {
-//     const coursesItems = $('.courses__items')
-//     $('.courses__item').each(function() {
-//         $(this).hover(function() {
-//             coursesItems.css({
-//                 'align-items': 'baseline'
-//             })
-//         }, function() {
-//             coursesItems.css({
-//                 'align-items': 'normal'
-//             })
-//         })
-//     })
-// })
+$(document).ready(function() {
+
+    const coursesMainButton = $('.courses__main-button')
+    $('.courses__item').each(function() {
+        $(this).hover(function() {
+            coursesMainButton.css({
+                'margin-top': '80px'
+            })
+        }, function() {
+            coursesMainButton.css({
+                'margin-top': '137px'
+            })
+        })
+    })
+})
 
 if (animationItems.length > 0) {
     window.addEventListener('wheel', animationOnScroll)

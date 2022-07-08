@@ -170,6 +170,7 @@ header.header .header__body .header__top {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 46px;
 }
 @media (max-width: 880px) {
   header.header .header__body .header__top {
@@ -1009,7 +1010,9 @@ section.courses .courses__body .courses__items {
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
-  min-height: 485px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 @media only screen and (max-width: 1200px) {
   section.courses .courses__body .courses__items {
@@ -1128,7 +1131,7 @@ section.courses .courses__body .courses__items .courses__item .courses-item-titl
           flex-grow: 0;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  height: 80px;
+  height: 40px;
 }
 @media only screen and (max-width: 920px) {
   section.courses .courses__body .courses__items .courses__item .courses-item-title {
@@ -1137,6 +1140,7 @@ section.courses .courses__body .courses__items .courses__item .courses-item-titl
             flex-grow: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0;
+    height: 20px;
   }
 }
 section.courses .courses__body .courses__items .courses__item .courses__item-text {
@@ -1150,6 +1154,23 @@ section.courses .courses__body .courses__items .courses__item .courses__item-tex
           flex-grow: 1;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+section.courses .courses__body .courses__items .courses__item .courses__item-text::after {
+  content: "";
+  display: block;
+  border-top: 1px solid #292B56;
 }
 @media only screen and (max-width: 920px) {
   section.courses .courses__body .courses__items .courses__item .courses__item-text {
@@ -1268,12 +1289,14 @@ section.courses .courses__body .courses__main-button {
   border-radius: 6px;
   padding: 10px 20px;
   text-align: center;
-  -webkit-transition: all 0.3s linear 0s;
-  transition: all 0.3s linear 0s;
+  -webkit-transition: background-color, color, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color, color, -webkit-box-shadow 0.3s linear 0s;
+  transition: background-color, color, box-shadow 0.3s linear 0s;
+  transition: background-color, color, box-shadow 0.3s linear 0s, -webkit-box-shadow 0.3s linear 0s;
   cursor: pointer;
 }
 section.courses .courses__body .courses__main-button:hover {
-  background: #F5443B;
+  background-color: #F5443B;
 }
 section.courses .courses__body .courses__main-button:hover a {
   color: #FFFFFF;
