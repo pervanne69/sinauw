@@ -6,6 +6,13 @@ const animationItems = document.querySelectorAll('._animation-items')
 
 const animationItemsSecond = document.querySelectorAll('._animation-items-second')
 
+const videoIframes = [
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/tRpoI6vkqLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/5sffVBeaOeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
+    `<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+]
+
+
 const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -146,6 +153,7 @@ burgerCloseBtn.addEventListener('click', () => {
         body.classList.remove('overflow-hidden')
     }
 })
+
 
 
 setTimeout(animationOnScroll, 500)
