@@ -808,7 +808,6 @@ section.about {
           display: flex;
           flex-direction: column;
           row-gap: 23px;
-
           .about__item-title {
             font-weight: 600;
             font-size: 20px;
@@ -860,14 +859,14 @@ section.courses {
       grid-gap: 30px;
       align-items: baseline;
       justify-content: center;
-      @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2 ) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
         grid-gap: 15px;
       }
-      @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2 ) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
         grid-template-columns: repeat(2, minmax(100px, 350px));
         justify-content: center;
       }
-      @media only screen and (max-width: 535px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2 ) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 535px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
         grid-template-columns: repeat(1, minmax(100px, 450px));
         justify-content: center;
       }
@@ -1003,6 +1002,7 @@ section.courses {
           justify-content: space-between;
           margin: 0 0 10px 0;
           text-overflow: ellipsis;
+
           &::after {
             content: "";
             display: block;
@@ -1235,8 +1235,8 @@ section.webinar {
 
               .webinar-play-btn {
                 transition: all 0.3s linear 0s;
-                background-color: red !important;
-                filter: hue-rotate(255deg) invert(1);
+                background-color: yellow !important;
+                filter: hue-rotate(150deg) invert(1);
               }
             }
           }
@@ -1348,6 +1348,169 @@ section.webinar {
   }
 }
 
+section.pricing {
+  background: #171836;
+
+  .pricing__body {
+    padding: 70px 0 115px 0;
+
+    .pricing__title.title {
+    }
+
+    .pricing__text.text {
+    }
+
+    .pricing__items {
+      margin: 84px 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        grid-gap: 15px;
+      }
+      @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        grid-template-columns: repeat(2, minmax(100px, 550px));
+        justify-content: center;
+      }
+      @media only screen and (max-width: 690px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        grid-template-columns: repeat(1, minmax(100px, 350px));
+        justify-content: center;
+      }
+    }
+    .pricing__item:not(:last-child) {
+      .pricing__button {
+        border: 1px solid #F5443B;
+        a {
+          color: #F5443B;
+        }
+      }
+    }
+    .pricing__item:first-child {
+      .pricing__button {
+        opacity: 0.5;
+        cursor: default;
+        a {
+          cursor: default;
+          color: #F5443B;
+        }
+      }
+    }
+    .pricing__item:last-child {
+      .pricing__button {
+        background: #F5443B;
+        a {
+          color: #FFFFFF;
+        }
+      }
+    }
+    .pricing__item {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.31) 100%);
+      border-radius: 20px;
+      padding: 40px 36px 36px;
+      .pricing__item-top {
+        display: flex;
+        flex-direction: row;
+        column-gap: 30px;
+        .pricing__item-icon {
+          position: relative;
+          padding: 10% 35% 0 0;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        .pricing__item-price {
+          .pricing__price-status {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 150%;
+            color: rgba(255, 255, 255, 0.8);
+          }
+          .pricing__item-pay {
+            display: flex;
+            .item-pay-price {
+              font-weight: 700;
+              font-size: 28px;
+              line-height: 130%;
+              color: #F5453D;
+              align-self: flex-end;
+            }
+
+            span.item-pay__dol {
+              font-weight: 700;
+              font-size: 14px;
+              line-height: 150%;
+              color: #F5453D;
+            }
+
+            span.item-pay__month {
+              font-weight: 500;
+              font-size: 11px;
+              line-height: 150%;
+              color: rgba(255, 255, 255, 0.8);
+              align-self: flex-end;
+              margin: 0 0 5px 0;
+            }
+          }
+        }
+      }
+
+      .pricing__list {
+        flex-grow: 1;
+        flex-shrink: 0;
+        ul.list {
+          .list__item {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 12px;
+            margin: 0 0 16px 0;
+            &:last-child {
+              margin: 0;
+            }
+            &::before {
+              content: "";
+              display: block;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background: #9799CE;
+            }
+          }
+        }
+      }
+
+      .pricing__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 16px 50px;
+        border-radius: 6px;
+        a {
+          text-align: center;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+
 
 .header__lang-passive {
   a {
@@ -1407,7 +1570,7 @@ section.webinar {
       flex-direction: column;
       justify-content: space-between;
       padding: 15px 15px 60px 15px;
-
+      border-radius: 6px;
       a {
         font-weight: 500;
         font-size: 32px;
