@@ -6,9 +6,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sinauw</title>
-    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
     <link rel="icon" href="images/logo.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -293,8 +292,8 @@
                         </div>
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="webinar__item swiper-slide">
-                                    <a href="" class="webinar__link">
+                                <div id="webinar-item-1" class="webinar__item swiper-slide webinar__item-one">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=tRpoI6vkqLs" class="webinar__link">
                                         <h5 class="webinar__link-text webinar__link-text-ru">
                                             Основы дизайна пользовательского интерфейса
                                         </h5>
@@ -303,8 +302,8 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="webinar__item swiper-slide swiper-slide-active">
-                                    <a href="" class="webinar__link">
+                                <div id="webinar-item-2" class="webinar__item swiper-slide swiper-slide-active webinar__item-two">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=5sffVBeaOeY" class="webinar__link">
                                         <h5 class="webinar__link-text webinar__link-text-ru">
                                             Как создать портфолио дизайнеру
                                         </h5>
@@ -313,8 +312,8 @@
                                         </span>
                                     </a>
                                 </div>
-                                <div class="webinar__item swiper-slide webinar__item-three">
-                                    <a href="" class="webinar__link">
+                                <div id="webinar-item-3" class="webinar__item swiper-slide webinar__item-three">
+                                    <a data-fancybox href="https://www.youtube.com/watch?v=qz0aGYrrlhU" class="webinar__link">
                                         <h5 class="webinar__link-text webinar__link-text-ru">
                                             Основы HTML CSS
                                         </h5>
@@ -335,7 +334,9 @@
         </main>
         <footer class="footer"></footer>
     </div>
+    <script language="JavaScript" type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
