@@ -1814,14 +1814,7 @@ section.get-apps .get-apps__body {
             column-gap: 40px;
   }
 }
-@media only screen and (max-width: 934px) {
-  section.get-apps .get-apps__body {
-    -webkit-column-gap: 20px;
-       -moz-column-gap: 20px;
-            column-gap: 20px;
-  }
-}
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 965px) {
   section.get-apps .get-apps__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1869,7 +1862,7 @@ section.get-apps .get-apps__body .get-apps__content {
   padding: 0 0 80px 0;
   margin: 85px 0 0 0;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 965px) {
   section.get-apps .get-apps__body .get-apps__content {
     max-width: 600px;
     margin: 85px auto 0 auto;
@@ -1881,6 +1874,11 @@ section.get-apps .get-apps__body .get-apps__content .get-apps__title {
   line-height: 160%;
   color: #FFFFFF;
   opacity: 0.7;
+}
+@media only screen and (max-width: 500px) {
+  section.get-apps .get-apps__body .get-apps__content .get-apps__title {
+    font-size: 30px;
+  }
 }
 section.get-apps .get-apps__body .get-apps__content .get-apps__text {
   font-weight: 400;
@@ -1939,7 +1937,7 @@ section.get-apps .get-apps__body .get-apps__hero-box {
   position: relative;
   max-width: 400px;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 965px) {
   section.get-apps .get-apps__body .get-apps__hero-box {
     margin: 50px auto 0 auto;
   }
@@ -2076,7 +2074,7 @@ section.get-apps .get-apps__body .get-apps__hero-box .hero-box__images {
           column-gap: 33.33px;
   margin: 0 0 34px 0;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (max-width: 965px) {
   section.get-apps .get-apps__body .get-apps__hero-box .hero-box__images {
     left: -10%;
   }

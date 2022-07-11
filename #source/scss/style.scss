@@ -1533,11 +1533,8 @@ section.get-apps {
     @media only screen and (max-width: 980px) {
       column-gap: 40px;
     }
-    @media only screen and (max-width: 934px) {
-      column-gap: 20px;
-    }
-    @media only screen and (max-width: 920px) {
-     flex-direction: column;
+    @media only screen and (max-width: 965px) {
+      flex-direction: column;
       padding: 0 45px;
       justify-content: center;
     }
@@ -1557,7 +1554,7 @@ section.get-apps {
       row-gap: 20px;
       padding: 0 0 80px 0;
       margin: 85px 0 0 0;
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 965px) {
         max-width: 600px;
         margin: 85px auto 0 auto;
       }
@@ -1567,6 +1564,9 @@ section.get-apps {
         line-height: 160%;
         color: #FFFFFF;
         opacity: 0.7;
+          @media only screen and (max-width: 500px) {
+            font-size: 30px;
+          }
       }
       .get-apps__text {
         font-weight: 400;
@@ -1614,7 +1614,7 @@ section.get-apps {
       margin: 50px 0 0 0;
       position: relative;
       max-width: 400px;
-      @media only screen and (max-width: 920px) {
+      @media only screen and (max-width: 965px) {
         margin: 50px auto 0 auto;
       }
       .hero-box__top {
@@ -1712,7 +1712,7 @@ section.get-apps {
         left: -30%;
         column-gap: 33.33px;
         margin: 0 0 34px 0;
-        @media only screen and (max-width: 920px)  {
+        @media only screen and (max-width: 965px)  {
           left: -10%;
         }
         @media only screen and (max-width: 375px) {
