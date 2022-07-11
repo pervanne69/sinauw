@@ -859,14 +859,14 @@ section.courses {
       grid-gap: 30px;
       align-items: baseline;
       justify-content: center;
-      @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 1200px) {
         grid-gap: 15px;
       }
-      @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 920px) {
         grid-template-columns: repeat(2, minmax(100px, 350px));
         justify-content: center;
       }
-      @media only screen and (max-width: 535px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 535px) {
         grid-template-columns: repeat(1, minmax(100px, 450px));
         justify-content: center;
       }
@@ -1353,27 +1353,20 @@ section.pricing {
 
   .pricing__body {
     padding: 70px 0 115px 0;
-
-    .pricing__title.title {
-    }
-
-    .pricing__text.text {
-    }
-
     .pricing__items {
       margin: 84px 0 0 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
       grid-gap: 15px;
-      @media only screen and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 1200px) {
         grid-gap: 15px;
       }
-      @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 980px) {
         grid-template-columns: repeat(2, minmax(100px, 550px));
         justify-content: center;
       }
-      @media only screen and (max-width: 690px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 700px)  {
         grid-template-columns: repeat(1, minmax(100px, 350px));
         justify-content: center;
       }
@@ -1534,26 +1527,26 @@ section.get-apps {
     display: flex;
     column-gap: 144px;
     justify-content: space-between;
-    @media only screen and (max-width: 1096px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    @media only screen and (max-width: 1096px)  {
       column-gap: 80px;
     }
-    @media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){
+    @media only screen and (max-width: 980px) {
       column-gap: 40px;
     }
-    @media only screen and (max-width: 934px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){
+    @media only screen and (max-width: 934px) {
       column-gap: 20px;
     }
-    @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    @media only screen and (max-width: 920px) {
      flex-direction: column;
       padding: 0 45px;
       justify-content: center;
     }
-    @media only screen and (max-width: 423px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    @media only screen and (max-width: 423px) {
       flex-direction: column;
       padding: 0 25px;
       justify-content: center;
     }
-    @media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    @media only screen and (max-width: 375px)  {
       flex-direction: column;
       padding: 0 15px;
       justify-content: center;
@@ -1564,7 +1557,7 @@ section.get-apps {
       row-gap: 20px;
       padding: 0 0 80px 0;
       margin: 85px 0 0 0;
-      @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 920px) {
         max-width: 600px;
         margin: 85px auto 0 auto;
       }
@@ -1621,7 +1614,7 @@ section.get-apps {
       margin: 50px 0 0 0;
       position: relative;
       max-width: 400px;
-      @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+      @media only screen and (max-width: 920px) {
         margin: 50px auto 0 auto;
       }
       .hero-box__top {
@@ -1697,7 +1690,7 @@ section.get-apps {
             line-height: 160%;
             color: #FFFFFF;
             opacity: 0.8;
-            @media only screen and (max-width: 438px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){
+            @media only screen and (max-width: 438px) {
               font-size: 9px;
             }
           }
@@ -1706,7 +1699,7 @@ section.get-apps {
             font-size: 8.23448px;
             line-height: 150%;
             color: rgba(255, 255, 255, 0.6);
-            @media only screen and (max-width: 438px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi){
+            @media only screen and (max-width: 438px) {
               font-size: 6px;
             }
           }
@@ -1719,10 +1712,10 @@ section.get-apps {
         left: -30%;
         column-gap: 33.33px;
         margin: 0 0 34px 0;
-        @media only screen and (max-width: 920px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        @media only screen and (max-width: 920px)  {
           left: -10%;
         }
-        @media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1.5) and (min-resolution: 144dpi) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+        @media only screen and (max-width: 375px) {
           left: 0%
         }
         .hero-box__item {
