@@ -123,7 +123,7 @@ html, body {
   background: linear-gradient(to bottom, #dd03e4, #5611ec);
 }
 
-@-webkit-keyframes animate-height-active-1 {
+@-webkit-keyframes animate-height-active {
   0% {
     height: 0;
   }
@@ -135,7 +135,7 @@ html, body {
   }
 }
 
-@keyframes animate-height-active-1 {
+@keyframes animate-height-active {
   0% {
     height: 0;
   }
@@ -146,29 +146,7 @@ html, body {
     height: 170px;
   }
 }
-@-webkit-keyframes animate-height-active-2 {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 50px;
-  }
-  100% {
-    height: 137px;
-  }
-}
-@keyframes animate-height-active-2 {
-  0% {
-    height: 0;
-  }
-  50% {
-    height: 50px;
-  }
-  100% {
-    height: 137px;
-  }
-}
-@-webkit-keyframes animate-height-passive-1 {
+@-webkit-keyframes animate-height-passive {
   0% {
     height: 170px;
   }
@@ -179,31 +157,9 @@ html, body {
     height: 0;
   }
 }
-@keyframes animate-height-passive-1 {
+@keyframes animate-height-passive {
   0% {
     height: 170px;
-  }
-  50% {
-    height: 50px;
-  }
-  100% {
-    height: 0;
-  }
-}
-@-webkit-keyframes animate-height-passive-2 {
-  0% {
-    height: 137px;
-  }
-  50% {
-    height: 50px;
-  }
-  100% {
-    height: 0;
-  }
-}
-@keyframes animate-height-passive-2 {
-  0% {
-    height: 137px;
   }
   50% {
     height: 50px;
@@ -2792,34 +2748,6 @@ footer.footer .footer__body .footer__bottom .footer__bottom-text {
 .footer__list-body-active .footer-list-slide li:last-child {
   margin: 0 0 20px 0 !important;
 }
-.footer__list-body-active .footer-list-slide:nth-child(1), .footer__list-body-active .footer-list-slide:nth-child(2) {
-  -webkit-animation-name: animate-height-active-1;
-          animation-name: animate-height-active-1;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.footer__list-body-active .footer-list-slide:nth-child(3), .footer__list-body-active .footer-list-slide:nth-child(4) {
-  -webkit-animation-name: animate-height-active-2;
-          animation-name: animate-height-active-2;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
 .footer__list-body-active .footer__title::after {
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -2829,34 +2757,7 @@ footer.footer .footer__body .footer__bottom .footer__bottom-text {
 
 .footer__list-body-passive .footer-list-slide {
   overflow: hidden;
-}
-.footer__list-body-passive .footer-list-slide:nth-child(1), .footer__list-body-passive .footer-list-slide:nth-child(2) {
-  -webkit-animation-name: animate-height-passive-1;
-          animation-name: animate-height-passive-1;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-.footer__list-body-passive .footer-list-slide:nth-child(3), .footer__list-body-passive .footer-list-slide:nth-child(4) {
-  -webkit-animation-name: animate-height-passive-2;
-          animation-name: animate-height-passive-2;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  display: none;
 }
 .footer__list-body-passive .footer__title::after {
   -webkit-transition: all 0.3s linear 0s;

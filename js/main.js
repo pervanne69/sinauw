@@ -73,7 +73,7 @@ const footerMessengers = body.querySelector('.footer__messengers')
 const footerLogo = body.querySelector('.footer__logo img')
 
 
-if (window.innerWidth <= 850) {
+if (window.innerWidth <= 932) {
     footerTop.classList.add('footer__top-flex-dir-column')
     footerLists.classList.add('footer__lists-flex-dir-column')
     footerMessengers.classList.add('footer__logo-section-align-center')
@@ -100,7 +100,7 @@ if (window.innerWidth <= 850) {
 
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= 850) {
+    if (window.innerWidth <= 932) {
         footerTop.classList.add('footer__top-flex-dir-column')
         footerLists.classList.add('footer__lists-flex-dir-column')
         footerMessengers.classList.add('footer__logo-section-align-center')
