@@ -123,6 +123,95 @@ html, body {
   background: linear-gradient(to bottom, #dd03e4, #5611ec);
 }
 
+@-webkit-keyframes animate-height-active-1 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 170px;
+  }
+}
+
+@keyframes animate-height-active-1 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 170px;
+  }
+}
+@-webkit-keyframes animate-height-active-2 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 137px;
+  }
+}
+@keyframes animate-height-active-2 {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 137px;
+  }
+}
+@-webkit-keyframes animate-height-passive-1 {
+  0% {
+    height: 170px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes animate-height-passive-1 {
+  0% {
+    height: 170px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@-webkit-keyframes animate-height-passive-2 {
+  0% {
+    height: 137px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 0;
+  }
+}
+@keyframes animate-height-passive-2 {
+  0% {
+    height: 137px;
+  }
+  50% {
+    height: 50px;
+  }
+  100% {
+    height: 0;
+  }
+}
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2150,6 +2239,149 @@ section.get-apps .get-apps__body .get-apps__hero-box .hero-box__images .hero-box
   content: url("../../images/chevron-right.png");
 }
 
+footer.footer {
+  background: #171836;
+}
+footer.footer .footer__body {
+  padding: 48px 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 86px;
+}
+footer.footer .footer__body .footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+footer.footer .footer__body .footer__top .footer__logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 10px;
+}
+footer.footer .footer__body .footer__top .footer__logo-section .footer__logo {
+  position: relative;
+  padding: 20% 10% 0 0;
+}
+footer.footer .footer__body .footer__top .footer__logo-section .footer__logo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+footer.footer .footer__body .footer__top .footer__logo-section .footer__feedback {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  color: rgba(255, 255, 255, 0.8);
+  opacity: 0.6;
+}
+footer.footer .footer__body .footer__top .footer__logo-section .footer__messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+footer.footer .footer__body .footer__top .footer__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 104px;
+     -moz-column-gap: 104px;
+          column-gap: 104px;
+}
+@media only screen and (max-width: 1050px) {
+  footer.footer .footer__body .footer__top .footer__lists {
+    -webkit-column-gap: 84px;
+       -moz-column-gap: 84px;
+            column-gap: 84px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  footer.footer .footer__body .footer__top .footer__lists {
+    -webkit-column-gap: 44px;
+       -moz-column-gap: 44px;
+            column-gap: 44px;
+  }
+}
+footer.footer .footer__body .footer__top .footer__lists .footer__list-body .footer__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0 0 24px 0;
+}
+footer.footer .footer__body .footer__top .footer__lists .footer__list-body ul.footer__list li.footer__item {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.6;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+  -webkit-transition: color 0.2s linear 0s;
+  transition: color 0.2s linear 0s;
+}
+footer.footer .footer__body .footer__top .footer__lists .footer__list-body ul.footer__list li.footer__item:last-child {
+  margin: 0;
+}
+footer.footer .footer__body .footer__top .footer__lists .footer__list-body ul.footer__list li.footer__item a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  opacity: 0.6;
+}
+footer.footer .footer__body .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer.footer .footer__body .footer__bottom .footer__bottom-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8F91D0;
+}
+
 .header__lang-passive a {
   display: none;
 }
@@ -2479,4 +2711,154 @@ section.get-apps .get-apps__body .get-apps__hero-box .hero-box__images .hero-box
   left: 0;
   position: absolute;
   top: 0;
+}
+
+.footer__list-body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.item-visited {
+  color: red !important;
+}
+
+.footer__top-flex-dir-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+  text-align: center;
+}
+
+.footer__lists-flex-dir-column {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.footer__list-body-slide {
+  width: 100%;
+}
+.footer__list-body-slide::after {
+  content: "";
+  display: block;
+  border-top: 1px solid red;
+  height: 1px;
+  width: 100%;
+}
+.footer__list-body-slide .footer__title {
+  position: relative;
+}
+.footer__list-body-slide .footer__title::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  color: white;
+  float: right;
+}
+
+.footer__logo-section-align-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__logo-align-center {
+  display: inline-block;
+  text-align: center;
+}
+
+.footer__list-body-active .footer-list-slide {
+  display: block;
+}
+.footer__list-body-active .footer-list-slide li:last-child {
+  margin: 0 0 20px 0 !important;
+}
+.footer__list-body-active .footer-list-slide:nth-child(1), .footer__list-body-active .footer-list-slide:nth-child(2) {
+  -webkit-animation-name: animate-height-active-1;
+          animation-name: animate-height-active-1;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.footer__list-body-active .footer-list-slide:nth-child(3), .footer__list-body-active .footer-list-slide:nth-child(4) {
+  -webkit-animation-name: animate-height-active-2;
+          animation-name: animate-height-active-2;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.footer__list-body-active .footer__title::after {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  -webkit-transform: rotate(540deg);
+          transform: rotate(540deg);
+}
+
+.footer__list-body-passive .footer-list-slide {
+  overflow: hidden;
+}
+.footer__list-body-passive .footer-list-slide:nth-child(1), .footer__list-body-passive .footer-list-slide:nth-child(2) {
+  -webkit-animation-name: animate-height-passive-1;
+          animation-name: animate-height-passive-1;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.footer__list-body-passive .footer-list-slide:nth-child(3), .footer__list-body-passive .footer-list-slide:nth-child(4) {
+  -webkit-animation-name: animate-height-passive-2;
+          animation-name: animate-height-passive-2;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.footer__list-body-passive .footer__title::after {
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
 }
