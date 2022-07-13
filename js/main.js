@@ -65,6 +65,18 @@ const footerMessengers = body.querySelector('.footer__messengers')
 
 const footerLogo = body.querySelector('.footer__logo img')
 
+body.querySelectorAll('.footer__list-body').forEach(element => {
+    const footerTitle = element.querySelector('.footer__title')
+    footerTitle.addEventListener('click', () => {
+        if (element.classList.contains("footer__list-body-active")) {
+            element.classList.remove("footer__list-body-active")
+            element.classList.add("footer__list-body-passive")
+        } else {
+            element.classList.remove("footer__list-body-passive")
+            element.classList.add("footer__list-body-active")
+        }
+    })
+})
 
 if (window.innerWidth <= 932) {
     console.log('yes')
@@ -75,16 +87,6 @@ if (window.innerWidth <= 932) {
     body.querySelectorAll('.footer__list-body').forEach(element => {
         element.classList.add('footer__list-body-slide')
         element.querySelector('.footer__list').classList.add('footer-list-slide')
-        const footerTitle = element.querySelector('.footer__title')
-        footerTitle.addEventListener('click', () => {
-            if (element.classList.contains('footer__list-body-active')) {
-                element.classList.remove('footer__list-body-active')
-                element.classList.add('footer__list-body-passive')
-            } else {
-                element.classList.remove('footer__list-body-passive')
-                element.classList.add('footer__list-body-active')
-            }
-        })
     })
 } else {
     footerTop.classList.remove('footer__top-flex-dir-column')
@@ -94,16 +96,6 @@ if (window.innerWidth <= 932) {
     body.querySelectorAll('.footer__list-body').forEach(element => {
         element.classList.remove('footer__list-body-slide')
         element.querySelector('.footer__list').classList.remove('footer-list-slide')
-        const footerTitle = element.querySelector('.footer__title')
-        footerTitle.addEventListener('click', () => {
-            if (element.classList.contains('footer__list-body-active')) {
-                element.classList.remove('footer__list-body-active')
-                element.classList.add('footer__list-body-passive')
-            } else {
-                element.classList.remove('footer__list-body-passive')
-                element.classList.add('footer__list-body-active')
-            }
-        })
     })
 }
 
@@ -118,16 +110,6 @@ window.addEventListener('resize', () => {
         body.querySelectorAll('.footer__list-body').forEach(element => {
             element.classList.add('footer__list-body-slide')
             element.querySelector('.footer__list').classList.add('footer-list-slide')
-            const footerTitle = element.querySelector('.footer__title')
-            footerTitle.addEventListener('click', () => {
-                if (element.classList.contains("footer__list-body-active")) {
-                    element.classList.remove("footer__list-body-active")
-                    element.classList.add("footer__list-body-passive")
-                } else {
-                    element.classList.remove("footer__list-body-passive")
-                    element.classList.add("footer__list-body-active")
-                }
-            })
         })
     } else {
         footerTop.classList.remove('footer__top-flex-dir-column')
@@ -137,16 +119,6 @@ window.addEventListener('resize', () => {
         body.querySelectorAll('.footer__list-body').forEach(element => {
             element.classList.remove('footer__list-body-slide')
             element.querySelector('.footer__list').classList.remove('footer-list-slide')
-            const footerTitle = element.querySelector('.footer__title')
-            footerTitle.addEventListener('click', () => {
-                if (element.classList.contains("footer__list-body-active")) {
-                    element.classList.remove("footer__list-body-active")
-                    element.classList.add("footer__list-body-passive")
-                } else {
-                    element.classList.remove("footer__list-body-passive")
-                    element.classList.add("footer__list-body-active")
-                }
-            })
         })
     }
 })
