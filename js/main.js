@@ -115,7 +115,7 @@ window.addEventListener('resize', () => {
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
                 element.classList.toggle('footer__list-body-active')
-                // element.classList.toggle('footer__list-body-passive')
+                element.classList.toggle('footer__list-body-passive')
             })
         })
     } else {
@@ -129,7 +129,7 @@ window.addEventListener('resize', () => {
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
                 element.classList.toggle('footer__list-body-passive')
-                // element.classList.toggle('footer__list-body-passive')
+                element.classList.toggle('footer__list-body-passive')
             })
         })
     }
@@ -237,4 +237,4 @@ burgerCloseBtn.addEventListener('click', () => {
 
 
 
-setTimeout(animationOnScroll, 200)
+setTimeout(animationOnScroll, 200) 
