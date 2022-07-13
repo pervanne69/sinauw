@@ -65,21 +65,15 @@ const footerMessengers = body.querySelector('.footer__messengers')
 
 const footerLogo = body.querySelector('.footer__logo img')
 
-body.querySelectorAll('.footer__list-body').forEach(element => {
-    const footerTitle = element.querySelector('.footer__title')
-    footerTitle.addEventListener('click', () => {
-        if (element.classList.contains("footer__list-body-active")) {
-            element.classList.remove("footer__list-body-active")
-            element.classList.add("footer__list-body-passive")
-        } else {
-            element.classList.remove("footer__list-body-passive")
-            element.classList.add("footer__list-body-active")
-        }
+body.querySelectorAll('.footer__title').forEach(el => {
+    const footerParent = el.parentElement
+    el.addEventListener('click', () => {
+        footerParent.classList.toggle("footer__list-body-active")
+        footerParent.classList.toggle("footer__list-body-passive")
     })
 })
 
 if (window.innerWidth <= 932) {
-    console.log('yes')
     footerTop.classList.add('footer__top-flex-dir-column')
     footerLists.classList.add('footer__lists-flex-dir-column')
     footerMessengers.classList.add('footer__logo-section-align-center')
@@ -102,7 +96,6 @@ if (window.innerWidth <= 932) {
 
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 932) {
-        console.log('yes')
         footerTop.classList.add('footer__top-flex-dir-column')
         footerLists.classList.add('footer__lists-flex-dir-column')
         footerMessengers.classList.add('footer__logo-section-align-center')
