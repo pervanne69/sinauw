@@ -95,6 +95,11 @@ if (window.innerWidth <= 932) {
     body.querySelectorAll('.footer__list-body').forEach(element => {
         element.classList.remove('footer__list-body-slide')
         element.querySelector('.footer__list').classList.remove('footer-list-slide')
+        const footerTitle = element.querySelector('.footer__title')
+        footerTitle.addEventListener('click', () => {
+            element.classList.toggle('footer__list-body-active')
+            element.classList.toggle('footer__list-body-passive')
+        })
     })
 }
 
@@ -122,6 +127,11 @@ window.addEventListener('resize', () => {
         body.querySelectorAll('.footer__list-body').forEach(element => {
             element.classList.remove('footer__list-body-slide')
             element.querySelector('.footer__list').classList.remove('footer-list-slide')
+            const footerTitle = element.querySelector('.footer__title')
+            footerTitle.addEventListener('click', () => {
+                element.classList.toggle('footer__list-body-passive')
+                // element.classList.toggle('footer__list-body-passive')
+            })
         })
     }
 })
