@@ -129,7 +129,7 @@ window.addEventListener('resize', () => {
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
                 element.classList.toggle('footer__list-body-passive')
-                element.classList.toggle('footer__list-body-passive')
+                element.classList.toggle('footer__list-body-active')
             })
         })
     }
