@@ -67,6 +67,7 @@ const footerLogo = body.querySelector('.footer__logo img')
 
 
 if (window.innerWidth <= 932) {
+    console.log('yes')
     footerTop.classList.add('footer__top-flex-dir-column')
     footerLists.classList.add('footer__lists-flex-dir-column')
     footerMessengers.classList.add('footer__logo-section-align-center')
@@ -109,6 +110,7 @@ if (window.innerWidth <= 932) {
 
 window.addEventListener('resize', () => {
     if (window.innerWidth <= 932) {
+        console.log('yes')
         footerTop.classList.add('footer__top-flex-dir-column')
         footerLists.classList.add('footer__lists-flex-dir-column')
         footerMessengers.classList.add('footer__logo-section-align-center')
