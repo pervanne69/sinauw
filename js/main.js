@@ -4,12 +4,6 @@ const animationItems = document.querySelectorAll('._animation-items')
 
 const animationItemsSecond = document.querySelectorAll('._animation-items-second')
 
-const videoIframes = [
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/tRpoI6vkqLs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/5sffVBeaOeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
-    `<iframe width="560" height="315" src="https://www.youtube.com/embed/qz0aGYrrlhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-]
-
 
 const swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
@@ -124,12 +118,12 @@ window.addEventListener('resize', () => {
             element.querySelector('.footer__list').classList.add('footer-list-slide')
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
-                if (element.classList.contains('footer__list-body-active')) {
-                    element.classList.remove('footer__list-body-active')
-                    element.classList.add('footer__list-body-passive')
+                if (element.classList.contains("footer__list-body-active")) {
+                    element.classList.remove("footer__list-body-active")
+                    element.classList.add("footer__list-body-passive")
                 } else {
-                    element.classList.remove('footer__list-body-passive')
-                    element.classList.add('footer__list-body-active')
+                    element.classList.remove("footer__list-body-passive")
+                    element.classList.add("footer__list-body-active")
                 }
             })
         })
@@ -143,12 +137,12 @@ window.addEventListener('resize', () => {
             element.querySelector('.footer__list').classList.remove('footer-list-slide')
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
-                if (element.classList.contains('footer__list-body-active')) {
-                    element.classList.remove('footer__list-body-active')
-                    element.classList.add('footer__list-body-passive')
+                if (element.classList.contains("footer__list-body-active")) {
+                    element.classList.remove("footer__list-body-active")
+                    element.classList.add("footer__list-body-passive")
                 } else {
-                    element.classList.remove('footer__list-body-passive')
-                    element.classList.add('footer__list-body-active')
+                    element.classList.remove("footer__list-body-passive")
+                    element.classList.add("footer__list-body-active")
                 }
             })
         })
