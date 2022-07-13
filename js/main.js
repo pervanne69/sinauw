@@ -128,8 +128,8 @@ window.addEventListener('resize', () => {
             element.querySelector('.footer__list').classList.remove('footer-list-slide')
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
-                element.classList.toggle('footer__list-body-passive')
                 element.classList.toggle('footer__list-body-active')
+                element.classList.toggle('footer__list-body-passive')
             })
         })
     }
