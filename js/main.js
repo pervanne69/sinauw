@@ -82,8 +82,13 @@ if (window.innerWidth <= 932) {
         element.querySelector('.footer__list').classList.add('footer-list-slide')
         const footerTitle = element.querySelector('.footer__title')
         footerTitle.addEventListener('click', () => {
-            element.classList.toggle('footer__list-body-active')
-            element.classList.toggle('footer__list-body-passive')
+            if (element.classList.contains('footer__list-body-active')) {
+                element.classList.remove('footer__list-body-active')
+                element.classList.add('footer__list-body-passive')
+            } else {
+                element.classList.remove('footer__list-body-passive')
+                element.classList.add('footer__list-body-active')
+            }
         })
     })
 } else {
@@ -96,8 +101,13 @@ if (window.innerWidth <= 932) {
         element.querySelector('.footer__list').classList.remove('footer-list-slide')
         const footerTitle = element.querySelector('.footer__title')
         footerTitle.addEventListener('click', () => {
-            element.classList.toggle('footer__list-body-active')
-            element.classList.toggle('footer__list-body-passive')
+            if (element.classList.contains('footer__list-body-active')) {
+                element.classList.remove('footer__list-body-active')
+                element.classList.add('footer__list-body-passive')
+            } else {
+                element.classList.remove('footer__list-body-passive')
+                element.classList.add('footer__list-body-active')
+            }
         })
     })
 }
@@ -114,8 +124,13 @@ window.addEventListener('resize', () => {
             element.querySelector('.footer__list').classList.add('footer-list-slide')
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
-                element.classList.toggle('footer__list-body-active')
-                element.classList.toggle('footer__list-body-passive')
+                if (element.classList.contains('footer__list-body-active')) {
+                    element.classList.remove('footer__list-body-active')
+                    element.classList.add('footer__list-body-passive')
+                } else {
+                    element.classList.remove('footer__list-body-passive')
+                    element.classList.add('footer__list-body-active')
+                }
             })
         })
     } else {
@@ -128,8 +143,13 @@ window.addEventListener('resize', () => {
             element.querySelector('.footer__list').classList.remove('footer-list-slide')
             const footerTitle = element.querySelector('.footer__title')
             footerTitle.addEventListener('click', () => {
-                element.classList.toggle('footer__list-body-active')
-                element.classList.toggle('footer__list-body-passive')
+                if (element.classList.contains('footer__list-body-active')) {
+                    element.classList.remove('footer__list-body-active')
+                    element.classList.add('footer__list-body-passive')
+                } else {
+                    element.classList.remove('footer__list-body-passive')
+                    element.classList.add('footer__list-body-active')
+                }
             })
         })
     }
